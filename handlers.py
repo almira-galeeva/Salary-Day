@@ -11,6 +11,5 @@ async def send_to_admin(dp):
 async def how_many_days_left(message: Message):
     sd = SalaryDay()
     sd.res_phrase()
-    print(sd.variants)
    
     await message.answer(text=sd.word_days)
