@@ -12,7 +12,7 @@ class SalaryDay:
         # possible varints of coming paycheck
         self.variants = [date(self.today_year, self.today_month, 5),
             date(self.today_year, self.today_month, 20),
-            date(self.today_year, self.today_month+1, 5),
+            date(self.today_year, (self.today_month+1)%12, 5),
             date(self.today_year+1, 1, 5)]
         
         # variants of days left
